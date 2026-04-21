@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Botones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <div class="pantalla-seccionada">
+            <input type="text" id="campo1" placeholder="0" readonly>
+            <span id="signo"> </span>
+            <input type="text" id="campo2" placeholder="0" readonly>
+            <span>=</span>
+            <input type="text" id="resultado" placeholder="?" readonly style="width: 40%; color: #fff;">
+        </div>
+
+        <div class="teclado">
+            <button onclick="agregarNumero(7)">7</button>
+            <button onclick="agregarNumero(8)">8</button>
+            <button onclick="agregarNumero(9)">9</button>
+            <button class="btn-op" onclick="seleccionarOperador('+')">+</button>
+
+            <button onclick="agregarNumero(4)">4</button>
+            <button onclick="agregarNumero(5)">5</button>
+            <button onclick="agregarNumero(6)">6</button>
+            <button class="btn-op" onclick="seleccionarOperador('-')">-</button>
+
+            <button onclick="agregarNumero(1)">1</button>
+            <button onclick="agregarNumero(2)">2</button>
+            <button onclick="agregarNumero(3)">3</button>
+            <button class="btn-op" onclick="seleccionarOperador('*')">*</button>
+
+            <button onclick="agregarNumero(0)">0</button>
+            <button class="btn-borrar" onclick="limpiar()">C</button>
+            <button class="btn-op" onclick="seleccionarOperador('/')">/</button>
+
+            <button class="btn-igual" onclick="resolver()">CALCULAR</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
